@@ -15,7 +15,9 @@ set shiftwidth=4
 
 set mouse=
 
-call plug#begin()
+set completeopt=menu,noselect
+
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'https://github.com/vim-airline/vim-airline.git'
 Plug 'https://github.com/scrooloose/nerdtree'
@@ -41,3 +43,4 @@ let g:NERDTreeDirArrowCollapsible="-"
 "   jellybeans   (easy for eyes less colors)
 "   wombat256mod (easy for eyes more colors)
 colorscheme molokai
+
